@@ -9,6 +9,7 @@ alias mv='mv -i'
 
 # Human friendly output
 alias ls='ls -h --color=auto'
-alias grep='grep --color=auto'
 alias df='df -h'
 alias free='free -h'
+
+export GREP_OPTIONS='--color=auto'
