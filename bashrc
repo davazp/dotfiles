@@ -9,6 +9,8 @@ alias mv='mv -i'
 
 # Human friendly output
 alias ls='ls -h --color=auto'
+alias ll='ls -l'
+alias la='ls -la'
 alias df='df -h'
 alias free='free -h'
 
