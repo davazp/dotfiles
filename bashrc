@@ -15,3 +15,11 @@ alias df='df -h'
 alias free='free -h'
 
 export GREP_OPTIONS='--color=auto'
+
+
+# Powerline
+if [ ! "$TERM" == dumb ]; then
+    if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+        source /usr/share/powerline/bindings/bash/powerline.sh
+    fi
+fi
