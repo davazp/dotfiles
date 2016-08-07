@@ -16,6 +16,11 @@ alias free='free -h'
 
 export GREP_OPTIONS='--color=auto'
 
+function recreatedb() {
+    dropdb --if-exists  $1
+    createdb $1
+}
+
 
 # Powerline
 if [ ! "$TERM" == dumb ]; then
