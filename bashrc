@@ -3,6 +3,9 @@
 
 alias emacs='emacsclient -t'
 
+# Expand aliases for sudo (see http://askubuntu.com/a/22043)
+alias sudo='sudo '
+
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
