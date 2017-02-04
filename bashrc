@@ -18,6 +18,8 @@ alias ll='ls -l'
 alias la='ls -la'
 alias df='df -h'
 alias free='free -h'
+alias du='du -h'
+
 
 export GREP_OPTIONS='--color=auto'
 
