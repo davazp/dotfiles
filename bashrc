@@ -1,6 +1,8 @@
 #!/bin/bash
 #                                                           -*- shell-script -*-
 
+export HISTTIMEFORMAT="%Y%m%d %T  "
+
 alias emacs='emacsclient -t'
 
 # Expand aliases for sudo (see http://askubuntu.com/a/22043)
