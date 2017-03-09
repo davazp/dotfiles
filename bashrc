@@ -8,9 +8,12 @@ alias emacs='emacsclient -t'
 # Expand aliases for sudo (see http://askubuntu.com/a/22043)
 alias sudo='sudo '
 
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
+alias rm='rm -iv'
+alias cp='cp -iv'
+alias mv='mv -iv'
+
+alias ..='cd ..'
+alias ...='cd ../../'
 
 # Human friendly output
 alias ls='ls -h --color=auto'
@@ -35,3 +38,8 @@ if [ ! "$TERM" == dumb ]; then
         source /usr/share/powerline/bindings/bash/powerline.sh
     fi
 fi
+
+function sandbox () {
+    docker run --rm -ti -v $(pwd):/cwd -w /cwd ${1:-debian:latest} bash
+}
+
