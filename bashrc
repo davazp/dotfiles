@@ -26,6 +26,9 @@ alias du='du -h'
 
 export GREP_OPTIONS='--color=auto'
 
+alias myip="curl http://ipecho.net/plain; echo"
+
+
 function recreatedb() {
     dropdb --if-exists  $1
     createdb $1
