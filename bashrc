@@ -24,8 +24,6 @@ alias free='free -h'
 alias du='du -h'
 
 
-export GREP_OPTIONS='--color=auto'
-
 alias myip="curl http://ipecho.net/plain; echo"
 
 
